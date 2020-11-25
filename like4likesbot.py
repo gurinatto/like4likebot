@@ -71,8 +71,8 @@ class AMFBot:
             senha = bot.find_element_by_id("password")
             usuario.clear()
             senha.clear()
-            usuario.send_keys("gus232321")
-            senha.send_keys("12345qwert")
+            usuario.send_keys("your_username")
+            senha.send_keys("your_password")
             bot.find_element_by_name('commit').click()
             bot.find_element_by_xpath('//*[@id="follow_btn_form"]/button').click()
             time.sleep(5)
@@ -87,5 +87,5 @@ class AMFBot:
         ed.twttwo()
 
 
-ed = AMFBot('gurinatto5', 'RZB8*R7-hexs-7P')
+ed = AMFBot('your_user', 'your_password')
 ed.open()
